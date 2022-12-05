@@ -1,0 +1,73 @@
+.footer-subscribtion-container{
+ 
+    margin-left: 93px;
+   }
+   .subscription-title{
+     margin-bottom: 20px;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     text-transform: uppercase;
+     color: var(--contacts-text-color);
+   }
+   
+   .footer-email-input {
+     width: 358px;
+     height: 50px;
+     padding: 16px 15px;
+     font-style: normal;
+     font-size: 16px;
+     line-height: 1.25;
+     letter-spacing: 0.03em;
+     display: flex;
+     align-items: center;
+     color: var(--contacts-text-color);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 4px;
+     background-color: transparent;
+
+     &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+        
+      }
+   }
+   
+   
+   .button-send-submit{
+     display: flex;
+     align-items: center;
+     margin-left: 12px;
+     background-color: var(--accent-color);
+     color: var(--contacts-text-color);
+     font-family: inherit;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: calc(30/16);
+     cursor: pointer;
+     letter-spacing: 0.06em;
+     border-radius: 4px;
+     border: 1px solid transparent;
+     padding: 10px 28px; 
+     box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover, 
+     &:focus {
+     color:var(--contacts-text-color) ;
+     background-color: #188CE8;
+     
+   }
+     &:active{
+     color: #188CE8;
+     
+   }
+   }
+   
+   .icon-send {
+     margin-left: 10px;
+     fill: var(--contacts-text-color);
+   }
+   .email-input{
+     display: flex;
+     align-items: baseline;
+   }

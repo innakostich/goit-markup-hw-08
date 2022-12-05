@@ -1,0 +1,39 @@
+h1,h2, h3, h4, h5, h6, p{
+    margin: 0;
+  }
+  .link a {
+    text-decoration: none;
+    color: currentColor;
+  }
+  .list, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+  }
+  img{
+    display: block;
+  }
+  .button{
+    display: inline-block;
+  }
+ 
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    
+  }
+ 
+  .header {
+    border-bottom: 1px solid #ECECEC;
+  }
+ 
+  .nav,
+  .header__contacts{
+   display: flex;
+   align-items: center;
+   list-style: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
