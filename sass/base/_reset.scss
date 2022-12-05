@@ -18,14 +18,36 @@ h1,h2, h3, h4, h5, h6, p{
     display: inline-block;
   }
  
-  .section {
-    padding-bottom: 94px;
-    padding-top: 94px;
+  section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
     
   }
  
   .header {
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+  .header__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    @media screen and (max-width: 767px) {
+      max-width: 767px;
+    }
   }
  
   .nav,
@@ -34,6 +56,4 @@ h1,h2, h3, h4, h5, h6, p{
    align-items: center;
    list-style: none;
   }
-  html {
-    scroll-behavior: smooth;
-  }
+  
