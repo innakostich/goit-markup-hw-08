@@ -1,11 +1,18 @@
 .team {
   background-color: var(--accent-color-bkground);
-  padding-top: 60px;
-  padding-bottom: 60px;
-  
+
+  @media screen and (max-width: 479px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 94px;
+    
   }
 }
 
@@ -30,10 +37,11 @@
     text-align: center;
     padding-left: 0;
     margin: 0;
-   /* @media screen and (min-width:768px){
+    @media screen and (min-width: 768px) {
       display: flex;
+      margin: -15px;
       flex-wrap: wrap;
-    }*/
+    }
   }
   
   .team__img{
