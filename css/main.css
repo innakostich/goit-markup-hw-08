@@ -224,6 +224,16 @@ section {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__contact {
+    margin-left: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    margin-left: 305px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
@@ -612,20 +622,35 @@ section {
 }
 
 .features {
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .features {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-.features__list {
-  list-style: none;
+.features-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
-  /*@media screen and (min-width:768px){
-    display: flex;
-    flex-wrap: wrap;
-  }*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 30px;
 }
 
 .features__title {
@@ -634,6 +659,11 @@ section {
   line-height: 1.1428571429;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: left;
+  }
+}
 
 .features__description {
   color: var(--secondary-text-color);
@@ -641,28 +671,55 @@ section {
   line-height: 1.7142857143;
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
 }
 
 .features__card {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-color: #F5F4FA;
-  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  background-color: var(--team-background-color);
+  background-color: #F5F4FA;
+}
+@media screen and (min-width: 480px) {
+  .features__card {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__card {
+    width: 270px;
+  }
 }
 
 @media screen and (min-width: 480px) {
