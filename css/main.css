@@ -798,6 +798,11 @@ section {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
 
 .work__list {
   list-style: none;
