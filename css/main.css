@@ -108,8 +108,8 @@ section {
 
 .container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -291,16 +291,14 @@ section {
 .hero {
   background-color: var(--secondary-background-color);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), color-stop(rgba(0, 0, 0, 0.2)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_sm@1x.jpg);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4)), url(../images/hero/img_sm@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 400px;
-  padding-top: 118px;
-  padding-bottom: 0px;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
@@ -341,9 +339,8 @@ section {
 }
 
 .hero__title {
+  display: block;
   padding: 0;
-  margin-bottom: 30px;
-  max-width: 250px;
   font-weight: 900;
   font-size: 18px;
   line-height: 1.62;
@@ -354,17 +351,16 @@ section {
 @media screen and (min-width: 480px) {
   .hero__title {
     font-size: 26px;
-    max-width: 360px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     max-width: 360px;
-    line-height: 1.3636363636;
+    line-height: 1.36;
     max-width: 696px;
-    margin-left: 0, auto;
-    margin-right: 0, auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -1215,7 +1211,6 @@ section {
 }
 
 .footer-flex {
-  display: block;
   margin: 0;
   padding: 0px;
   list-style: none;
@@ -1241,7 +1236,6 @@ section {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    text-align: left;
   }
 }
 
@@ -1340,24 +1334,25 @@ section {
   background-color: var(--accent-color);
 }
 
-.footer-subscribtion-container {
+.footer-subscribtion {
   width: 100%;
   margin-top: 60px;
 }
 @media (min-width: 768px) {
-  .footer-subscribtion-container {
+  .footer-subscribtion {
     margin-top: 0px;
     padding: 0;
   }
 }
 @media (min-width: 1200px) {
-  .footer-subscribtion-container {
+  .footer-subscribtion {
     margin-left: 93px;
   }
 }
 
 .subscription-title {
   margin-bottom: 20px;
+  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1367,7 +1362,6 @@ section {
 
 .footer-email-input {
   margin-bottom: 20px;
-  width: 100%;
   margin: 0;
   padding: 13px 16px;
   border-radius: 4px;
@@ -1405,22 +1399,42 @@ section {
   .footer-email-input::-webkit-input-placeholder {
     width: 358px;
     margin-right: 12px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
   }
   .footer-email-input::-moz-placeholder {
     width: 358px;
     margin-right: 12px;
+    display: flex;
+    align-items: center;
   }
   .footer-email-input:-ms-input-placeholder {
     width: 358px;
     margin-right: 12px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .footer-email-input::-ms-input-placeholder {
     width: 358px;
     margin-right: 12px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .footer-email-input::placeholder {
     width: 358px;
     margin-right: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1461,16 +1475,26 @@ section {
 .button-send-submit:active {
   color: #188CE8;
 }
+@media (min-width: 1200px) {
+  .button-send-submit {
+    margin-top: 0px;
+  }
+}
 
 .icon-send {
   margin-left: 10px;
   fill: var(--contacts-text-color);
 }
 
-.email-input {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (min-width: 1200px) {
+  .email-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .filter-list {

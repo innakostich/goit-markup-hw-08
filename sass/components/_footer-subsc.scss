@@ -1,6 +1,7 @@
-.footer-subscribtion-container{
+.footer-subscribtion{
    width: 100%;
    margin-top: 60px;
+
    @media (min-width: 768px) {
     margin-top: 0px;
     padding: 0;
@@ -12,6 +13,7 @@
 }
    .subscription-title{
      margin-bottom: 20px;
+     margin-top: 60px;
      font-weight: 700;
      font-size: 14px;
      line-height: 1.14;
@@ -21,7 +23,7 @@
    
    .footer-email-input {
     margin-bottom: 20px;
-    width: 100%;
+   
     margin: 0;
     padding: 13px 16px;
     border-radius: 4px;
@@ -39,6 +41,8 @@
     @media (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
+    display: flex;
+    align-items: center;
     }
       }
    }
@@ -77,6 +81,9 @@
        color: #188CE8;
      
     }
+    @media (min-width: 1200px) {
+      margin-top: 0px;
+    }
    }
    
    .icon-send {
@@ -84,6 +91,9 @@
      fill: var(--contacts-text-color);
    }
    .email-input{
+    @media (min-width: 1200px) {
+      display: flex;
+    align-items: baseline;
+    }
     
-   justify-content: center;
-   }
+  }
