@@ -1,8 +1,4 @@
-.footer-flex {
-    display: flex;
-    align-items: baseline;
-     
-  }
+
   
   .footer-offer {
     margin-bottom: 20px;
@@ -14,11 +10,22 @@
   }
 
   .offer{
-    margin-left: 70px;
+    
+      display: block;
+    
+      margin-top: 60px;
+      text-align: center;
+    
+      @media (min-width: 768px) {
+        margin-top: 0px;
+      
+    }
   }
 
   .footer-soclink {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-soclink .footer-items:not(:last-child) {
     margin-right: 10px;

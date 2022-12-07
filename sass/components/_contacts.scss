@@ -3,7 +3,7 @@
 
 .header__contact {
  
-    display: flex;
+    //display: flex;
   
     @media screen and (max-width: 767px) {
       padding-top: 60px;
@@ -43,8 +43,8 @@
   
 
     .header__contacts__link{
-      display: flex;
-       align-items: center;
+      //display: flex;
+       //align-items: center;
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: 0px;
@@ -62,7 +62,7 @@
    
     padding: 32px 0px 32px;
     text-decoration: none;
-    align-items: center;
+   // align-items: center;
   
     font-weight: 500;
     font-size: 14px;

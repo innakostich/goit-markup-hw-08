@@ -1,11 +1,28 @@
 .footer{
     background-color: var(--secondary-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    text-align: center;
+    padding: 60px 0px;
   }
   
-.footer-flex-element:not(:last-child) {
-    margin-right: 94px;
+.footer-flex{
+
+  display: block;
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+
+@media (min-width: 768px) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 165px;
+}
+@media (min-width: 1200px) {
+   display: flex;
+   align-items: baseline;
+    text-align: left;
+    
+}
   }
  
   .google-link .link{
