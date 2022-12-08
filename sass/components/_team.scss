@@ -1,48 +1,36 @@
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--accent-color-bkground);
-
-  @media screen and (max-width: 479px) {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
-    padding-top: 94px;
-    
+    padding-bottom: 94px;
   }
 }
 
-  .team__title{
-    color: var(--primary-text-color);
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
+
+.team__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     font-size: 36px;
   }
-    
-  }
+}
   
-  .team__list{
-    list-style: none;
-    display: flex;
-    text-align: center;
-    padding-left: 0;
-    margin: 0;
-    @media screen and (min-width: 768px) {
-      display: flex;
-      margin: -15px;
-      flex-wrap: wrap;
-    }
-  }
+  
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
   
   .team__img{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -50,12 +38,8 @@
     border: none;
     background-color: var(--contacts-text-color);
 
-    &:not(:last-child) {
-  
-        margin-right: 30px;
-      }
+  background-color: var(--contacts-text-color);
 
-      
   @media screen and (max-width: 479px) {
     width: 270px;
   }
@@ -71,11 +55,10 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
-  }
+}
   
   .team__box{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0px;
     }
     
   .team__name{
@@ -83,7 +66,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
-    margin-bottom: 10px;
+    text-align: center;
   
   }
   
@@ -99,13 +82,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+  
+    padding: 0px 32px;
     margin-top: 16px;
+    list-style: none;
+    gap: 10px;
   }
   .team__socials__link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -122,6 +106,7 @@
   }
   
   .team__socials__icon{
+    margin: 12px 0px 0px 12px;
     fill:currentColor;
   }
   
