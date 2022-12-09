@@ -569,30 +569,35 @@ section {
 
 .modal-form-wrapper textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
 
 .modal-form-wrapper textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 14.06px;
 }
