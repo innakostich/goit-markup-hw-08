@@ -24,7 +24,7 @@
               <li class="nav__item"><a href="" class="nav__link link">Контакти</a></li>
           </ul>
       </nav>
-      <ul class="header__contacts list">
+      <ul class="header__contacts__list">
       <li class="header__contacts__item"><a href="mailto:info@devstudio.com" class="header__contacts__link">
         <svg class="header__contacts__icon" width="16"
         height="12">
@@ -59,40 +59,40 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <strong class="modal-label">Залиште свої дані, ми вам передзвонимо</strong>
-           <form class="form modal-form">
-            <div class="modal-form-group" role="group">
-              <label class="modal-form-label" for="name">Ім'я</label>
-                <div class="modal-form-wrapper">
-                <input type="text" class="modal-form-field" name="name" id="name" placeholder=" " />
-                  <svg class="field-icon" width="18"
+          <strong class="modal__title">Залиште свої дані, ми вам передзвонимо</strong>
+           <form class="form modal__form">
+            <div class="modal__group" role="group">
+              <label class="modal__label" for="name">Ім'я</label>
+                <div class="modal__wrapper">
+                <input type="text" class="modal__field" name="name" id="name" placeholder=" " />
+                  <svg class="field__icon" width="18"
               height="18">
               <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
            
   
-            <label class="modal-form-label" for="tel">Телефон</label>
-            <div class="modal-form-wrapper">
-              <input type="tel" class="modal-form-field" name="tel" id="tel" placeholder=" " />
-                <svg class="field-icon" width="18"
+            <label class="modal__label" for="tel">Телефон</label>
+            <div class="modal__wrapper">
+              <input type="tel" class="modal__field" name="tel" id="tel" placeholder=" " />
+                <svg class="field__icon" width="18"
             height="18">
             <use href="./images/icons.svg#icon-phone"></use>  
             </svg>
             </div>
      
-            <label class="modal-form-label" for="email">Пошта</label>
-            <div class="modal-form-wrapper">
-            <input type="text" class="modal-form-field" name="email" id="email" placeholder=" " />
-              <svg class="field-icon" width="18"
+            <label class="modal__label" for="email">Пошта</label>
+            <div class="modal__wrapper">
+            <input type="text" class="modal__field" name="email" id="email" placeholder=" " />
+              <svg class="field__icon" width="18"
           height="18">
           <use href="./images/icons.svg#icon-email"></use>
           </svg>
             </div>
      
-            <label class="modal-form-label" for="user_message">Коментар</label>
+            <label class="modal__label" for="user_message">Коментар</label>
             <textarea
-              class="modal-form-message"
+              class="modal__message"
               name="user_message"
               id="user_message"
               rows="6"
@@ -100,12 +100,12 @@
             ></textarea>
       </div>               
       
-          <div class="modal-form-agreement" role="group">
-            <input type="checkbox" id="user_agreement" class="modal-form-checkbox" />
-            <label class="agreement-field" for="user_agreement"> Погоджуюся з розсилкою та приймаю <a href="" class="agreement-link">Умови договору</a>
+          <div class="agreement__form" role="group">
+            <input type="checkbox" id="user_agreement" class="modal__checkbox" />
+            <label class="agreement__field" for="user_agreement"> Погоджуюся з розсилкою та приймаю <a href="" class="agreement__link">Умови договору</a>
             </label>
           </div>
-           <button type="submit" class="submit-button">Відправити</button>
+           <button type="submit" class="modal__button__submit">Відправити</button>
         </form>
       </div>
     </div>

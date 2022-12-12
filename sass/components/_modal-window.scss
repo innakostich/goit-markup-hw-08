@@ -1,27 +1,47 @@
 
-  .modal-label{
+  .modal__title{
     display: block;
     text-align: center;
     margin-bottom: 12px;
+    margin-top: 40px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 128%;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+     line-height: 1.15;
+    }
    
   }
+  .modal__group{
+    
+    padding-right: 40px;
+    padding-left: 40px;
+  
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
+  }
  
-  .modal-form-label {
+  .modal__label {
     display: flex;
     justify-content: left;
     font-size: 12px;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
-  .modal-form-wrapper {
+  .modal__wrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
   }
-  .modal-form-field {
+  .modal__field {
     width: 100%;
     height: 40px;
     padding-left: 40px;
@@ -32,8 +52,13 @@
     outline: 1px solid transparent;
     outline-offset: -1px;
     transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:focus {
+      outline-color: var(--accent-color);
+      
+    }
   }
-  .modal-form-message {
+  .modal__message {
     display: block;
     width: 100%;
     height: 140px;
@@ -52,32 +77,22 @@
       }
   }
   
-    .modal-form-field:focus + .field-icon {
-      fill: var(--accent-color);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .modal-form-field:focus{
-      outline-color: var(--accent-color);
-      transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-   
-  .field-icon {
+  .modal__field:focus + .field__icon {
+   fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .field__icon {
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+       
   }
   
 
-.modal-form-wrapper textarea::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-    font-family: 'Roboto', sans-serif ;
-    font-size: 12px;
-    line-height: 14.06px;
-   
-}
-.modal-form-checkbox{
+
+.modal__checkbox{
   appearance: none;
   width: 18px;
   height: 18px;
@@ -99,26 +114,47 @@
   }
 }
 
-.agreement-link{
+.agreement__link{
   color: var(--accent-color);
+  margin-left: 3px;
+  color: rgba(33, 150, 243, 1);
+
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    top: 18px;
+    left: 21px;
+  }
 }
-.modal-form-agreement {
-  margin-top: 20px;
-  margin-bottom: 30px;
+.agreement__form {
+  padding-bottom: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
 }
 
-.agreement-field {
+.agreement__field {
   position: relative;
-  font-size: 14px;
-  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 1.14;
+  color: var(--secondary-text-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.11;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
    
 }
 
-.submit-button{
+.modal__button__submit{
   background-color: var(--accent-color);
   color:  rgba(255, 255, 255, 1);
   font-family: inherit;
@@ -129,6 +165,7 @@
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 52px; 
+  margin-bottom: 40px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -2,19 +2,28 @@
     color: var(--secondary-accent-color);
     font-family: 'Raleway', sans-serif ;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: calc(31/26);
     text-decoration: none;
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
 
   .logo__footer{
     color: var(--contacts-text-color);
     font-family: 'Raleway', sans-serif ;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: calc(31/26);
     text-decoration: none;
     padding-bottom: 20px;
     display: block;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
+   
   }
