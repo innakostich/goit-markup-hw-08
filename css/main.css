@@ -348,7 +348,6 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
