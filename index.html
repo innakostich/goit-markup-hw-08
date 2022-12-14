@@ -41,7 +41,61 @@
       </li>
       </ul>
 
-      <!-- Mobile menu -->
+      <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon-burger" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+        </button>
+      </div>
+      <div class="menu__container js-menu-container" id="mobile-menu">
+        <div>
+          <button class="menu__toggle js-close-menu">
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__menu">
+            <li class="mobile__menu__item">
+              <a class="mobile__menu__link link mobile__menu__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile__menu__item">
+              <a class="mobile__menu__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile__menu__item">
+              <a class="mobile__menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile__contacts list">
+          <li class="mobile__contacts__item">
+            <a class="mobile__contacts__link link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mobile__contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile__contacts__link link">info@devstudio.com</a>
+          </li>
+        </ul>
+          <ul class="mobile__social list">
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://instagram.com">Instagram</a>
+
+              </li>
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://twitter.com">Twitter</a>
+            </li>
+           
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://facebook.com" class="mobile__social__link link">Facebook</a>
+            </li>
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://linkedin.com" class="mobile__social__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+      <!-- Mobile menu 
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu__burger" width="24" height="16">
           <use href="./images/icons.svg#icon-menu_burger"></use>
@@ -94,7 +148,7 @@
     
     </div>
    
-  </header>
+  </header>-->
   <!--Hero-->
   <main>
     <section class="hero">
@@ -716,7 +770,7 @@
     </div>
   </div> 
   </footer>
-  <script src="./js/mobile-menu.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 </html>
