@@ -30,7 +30,8 @@
         height="12">
         <use href="./images/icons.svg#icon-envelope"></use>
         </svg>
-        info@devstudio.com</a></li>
+        info@devstudio.com</a>
+      </li>
       <li class="header__contacts__item">
           <a href="tel:+380961111111" class="header__contacts__link">
             <svg class="header__contacts__icon" width="10"
@@ -38,117 +39,33 @@
               <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
             +38 096 111 11 11</a>
-      </li>
+        </li>
       </ul>
-
-      <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="icon-burger" width="24" height="24">
-          <use href="./images/icons.svg#icon-burger"></use>
-        </svg>
-        </button>
-      </div>
-      <div class="menu__container js-menu-container" id="mobile-menu">
-        <div>
-          <button class="menu__toggle js-close-menu">
-            <svg class="menu-close" width="40" height="40">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <ul class="mobile__menu">
-            <li class="mobile__menu__item">
-              <a class="mobile__menu__link link mobile__menu__link--current" href="./index.html">Студия</a>
-            </li>
-            <li class="mobile__menu__item">
-              <a class="mobile__menu__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="mobile__menu__item">
-              <a class="mobile__menu__link link" href="">Контакты</a>
-            </li>
-          </ul>
-        </div>
-        <ul class="mobile__contacts list">
-          <li class="mobile__contacts__item">
-            <a class="mobile__contacts__link link" href="tel:+380961111111">
-              +38 096 111 11 11</a>
-          </li>
-          <li class="mobile__contacts__item">
-            <a href="mailto:info@devstudio.com" class="mobile__contacts__link link">info@devstudio.com</a>
-          </li>
-        </ul>
-          <ul class="mobile__social list">
-            <li class="mobile__social__item">
-              <a  class="mobile__social__link link"href="https://instagram.com">Instagram</a>
-
-              </li>
-            <li class="mobile__social__item">
-              <a  class="mobile__social__link link"href="https://twitter.com">Twitter</a>
-            </li>
-           
-            <li class="mobile__social__item">
-              <a  class="mobile__social__link link"href="https://facebook.com" class="mobile__social__link link">Facebook</a>
-            </li>
-            <li class="mobile__social__item">
-              <a  class="mobile__social__link link"href="https://linkedin.com" class="mobile__social__link link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
+      
+      <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg
+        width="24"
+        height="24"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  
       </div>
     </header>
 
-      <!-- Mobile menu 
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="menu__burger" width="24" height="16">
-          <use href="./images/icons.svg#icon-menu_burger"></use>
-        </svg>
-        </button>
-    </div>
-    <div class="menu__container js-menu-container" id="mobile-menu">
-      <button class="menu__toggle js-close-menu">
-        <svg class="menu__close" width="24" height="16">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-        </button>
-    </div>
-       <div>
-        <ul class="mobile__menu">
-          <li class="mobile__menu__item">
-            <a class="mobile__menu__link link" href="./index.html">Студія</a>
-          </li>
-          <li class="mobile__menu__item">
-            <a class="mobile__menu__link link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="mobile__menu__item">
-            <a class="mobile__menu__link link" href="">Контакти</a>
-          </li>
-        </ul>
-  
-        <ul class="mobile__contacts list">
-          <li class="mobile__contacts__item">
-            <a href="tel:+380961111111" class="mobile__contacts__link link">+38 096 111 11 11</a>
-          </li>
-          <li class="mobile__contacts__item">
-            <a href="mailto:info@devstudio.com" class="mobile__contacts__link link">info@devstudio.com</a>
-          </li>
-        </ul>
-  
-        <ul class="mobile__socials list">
-          <li class="mobile__socials__item">
-            <a href="https://instagram.com" class="mobile__social__link link">Instagram</a>
-          </li>
-          <li class="mobile__socials__item">
-            <a href="https://twitter.com" class="mobile__social__link link">Twitter</a>
-          </li>
-          <li class="mobile__socials__item">
-            <a href="https://facebook.com" class="mobile__social__link link">Facebook</a>
-          </li>
-          <li class="mobile__socials__item">
-            <a href="https://linkedin.com" class="mobile__social__link link">LinkedIn</a>
-          </li>
-        </ul>
     
-    </div>
-   
-  </header>-->
   <!--Hero-->
   <main>
     <section class="hero">
@@ -770,7 +687,322 @@
     </div>
   </div> 
   </footer>
-  <script defer src="./js/mobile-menu.js"></script>
+
+  <!--Mobile Menu-->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li><a href="" class="link">About</a></li>
+      <li><a href="" class="link">Products</a></li>
+      <li><a href="" class="link">Contacts</a></li>
+      <li><a href="" class="link">Career</a></li>
+    </ul>
+  </div>
+
+ 
   <script src="./js/modal.js"></script>
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
+
+
+<!-- Menu
+  
+  
+ <div class="menu__container js-menu-container" id="mobile-menu">
+        <div>
+          <button class="menu__toggle js-close-menu">
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__menu">
+            <li class="mobile__menu__item">
+              <a class="mobile__menu__link link mobile__menu__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile__menu__item">
+              <a class="mobile__menu__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile__menu__item">
+              <a class="mobile__menu__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile__contacts list">
+          <li class="mobile__contacts__item">
+            <a class="mobile__contacts__link link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mobile__contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile__contacts__link link">info@devstudio.com</a>
+          </li>
+        </ul>
+          <ul class="mobile__social list">
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://instagram.com">Instagram</a>
+
+              </li>
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://twitter.com">Twitter</a>
+            </li>
+           
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://facebook.com" class="mobile__social__link link">Facebook</a>
+            </li>
+            <li class="mobile__social__item">
+              <a  class="mobile__social__link link"href="https://linkedin.com" class="mobile__social__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div> 
+  
+    .menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  @media (max-width: 767px) {
+    .menu {
+      display: none;
+    }
+  }
+  
+  .menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu .link:hover,
+  .menu .link:focus {
+    text-decoration: underline;
+  }
+  .menu__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: var(--contacts-text-color);
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  .menu__container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu__container .menu__toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: var(--contacts-text-color);
+  }
+  .menu__toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin-left: auto;
+    padding: 0;
+    background-color: var( --primary-background-color);
+    color: var(--contacts-text-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline:none ;
+
+    @media (min-width: 768px)  {
+          display: none;
+        }
+  }
+  
+  .menu__toggle:hover,
+  .menu__toggle:focus {
+    background-color:var(--accent-color);
+  }
+    
+  
+ 
+
+
+
+  .mobile__menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+    margin-bottom: auto;
+  }
+
+  .mobile__menu__link {
+    display: block;
+    padding: 10px;
+    color: var(--contacts-text-color);
+    text-decoration: none;
+  }
+  .mobile__social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  
+ .mobile__social__item{
+
+    position: relative;
+  
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-color);
+  
+    &:not(:first-child)::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+ }
+
+  
+ 
+  
+  
+
+  
+  .menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: transparent;
+    color: var(--primary-text-color);
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  
+  .mob-menu-list__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  
+  .mob-menu-list__link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  
+    color: var(--primary-text-color);
+  
+    &:focus,
+    &:hover {
+      color: var(--accent-color);
+    }
+  
+    &--current {
+      color: var(--accent-color);
+    }
+  }
+  
+  .mob-menu-list__tell {
+    display: block;
+    margin-bottom: 32px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+  
+  .mob-menu-list__mail {
+    display: block;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  
+    margin-bottom: 64px;
+  }
+  
+
+  
+  .mob-menu-list__social-item {
+    position: relative;
+  
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-color);
+  
+    &:not(:first-child)::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -10px;
+      width: 1px;
+      height: 22px;
+      background-color: #21212133;
+    }
+  }
+  
+  .mob-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  Mob-->
