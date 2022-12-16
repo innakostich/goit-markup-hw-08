@@ -2,57 +2,63 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: var(--primary-background-color);
+  background-color:var(--contacts-text-color);
   top: 0;
   right: 0;
-  padding: 15px 10px 48px 40px;
+  padding: 48px 83px 48px 40px;
   z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
 }
 
 .js-menu-container{
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.js-open-menu {
+.menu__toggle {
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  color: var(--primary-text-color);
-  border: none;
+
   margin-left: auto;
+  padding: 0;
+  background-color: transparent;
   cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 
   &:hover,
-  &:focus {
-    fill: var(--accent-color);
+  &:focus{
+    background-color: rgba(0, 0, 0, 0.1); 
   }
 
-  @media screen and (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
+  .menu__toggle {
     display: none;
   }
 }
 
-.js-close-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.menu-container .menu__toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   
-  background-color: transparent;
-  color: var(--primary-text-color);
-  border: none;
-  margin-left: auto;
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
 }
+
+
 
 .mobile__menu__item {
   &:not(:last-child) {
@@ -66,7 +72,7 @@
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-   text-decoration: none;
+  text-decoration: none;
   color: var(--primary-text-color);
 
   &:focus,
@@ -93,8 +99,7 @@
 }
 
 .mobile__contacts__mail{
-display: block;
-
+  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -103,24 +108,17 @@ display: block;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
-  margin-bottom: 64px;
+  
 }
 .mobile__social{
   display: flex;
-  flex-direction: row;
-   
-  column-gap: 20px;
+  gap: 20px;
+  
+  
 }
-.mobile__social__link {
+.mobile__social__item {
   position: relative;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-
-  color:var(--accent-color);
-
+  
   &:not(:first-child)::before {
     content: "";
     display: block;
@@ -132,96 +130,16 @@ display: block;
     background-color: rgba(33, 33, 33, 0.2);
   }
 }
-.mob-menu.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu .link {
-  padding: 10px;
-  color: inherit;
+.mobile__social__link{
   text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color:var(--accent-color);
 }
 
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
 
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin-left: auto;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 32px;
-  background-color: var(--primary-background-color);
-  z-index: 999;
-
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
-}
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
-}
-
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-}
