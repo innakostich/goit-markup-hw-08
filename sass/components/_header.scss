@@ -70,7 +70,7 @@
 .header__contacts__list {
    margin-left: auto;
    display: flex;
-
+  
    @media screen and (max-width: 767px) {
     display: none;
   }
@@ -93,7 +93,7 @@
   line-height: calc(16/14);
   letter-spacing: 0.02em;
   text-decoration: none;
-
+  
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -102,16 +102,22 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts__item:not(:last-child) {
     margin-bottom: 10px;
+    margin-right: 0;
   }
 }
    
-
+@media screen and (min-width: 1200px)  {
+  .header__contacts__item:not(:last-child) {
+  margin-right: 30px;
+ }
+}
     .header__contacts__icon{
     fill: currentColor;
   }

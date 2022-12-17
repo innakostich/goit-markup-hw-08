@@ -291,12 +291,19 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts__link {
     padding: 0;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts__item:not(:last-child) {
     margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contacts__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .header__contacts__icon {
@@ -910,6 +917,7 @@ section {
   font-size: 14px;
   line-height: 1.1428571429;
   margin-bottom: 10px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .features__title {
@@ -974,12 +982,12 @@ section {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .work {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .work {
     display: none;
   }
@@ -1076,6 +1084,7 @@ section {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+  color: var(--primary-text-color);
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -1132,6 +1141,10 @@ section {
   .team__img {
     width: 270px;
   }
+}
+
+.team-avatar {
+  max-width: 100%;
 }
 
 .team__box {
@@ -1278,7 +1291,7 @@ section {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .clients__link {
     width: 210px;
   }
@@ -1332,16 +1345,16 @@ section {
   }
 }
 
-.footer__contacts {
-  margin-top: 20px;
-}
-
 .footer__contacts__address {
   color: var(--contacts-text-color);
   font-size: 14px;
   line-height: 1.7142857143;
   text-decoration: none;
   font-style: normal;
+}
+
+.footer__contacts__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer__contacts__link {
